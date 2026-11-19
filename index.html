@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kawaii Pink's World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrapper">
+    <header class="top-bar">
+      <h1>🐰 Kawaii Pink's World</h1>
+      <div class="controls-hint">
+        <span>⬅️ ➡️ Mover</span>
+        <span>⬆️ / Espaço Pular</span>
+        <span>Z / X Atirar Estrela</span>
+        <span>R Reiniciar</span>
+      </div>
+    </header>
+
+    <div class="canvas-container">
+      <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+      <!-- Tela Inicial / Game Over / Vitória -->
+      <div id="overlay" class="overlay">
+        <div class="overlay-card">
+          <h2 id="overlayTitle">Kawaii Pink's World</h2>
+          <p id="overlaySubtitle">
+            Ajude a Coelhinha Mochi a coletar as 5 Flores Mágicas e chegar ao Castelo antes que o tempo acabe!
+          </p>
+          <div id="overlayStats" class="stats-box hidden"></div>
+          <button id="startBtn" class="btn-pink">▶ Jogar Agora</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-controls">
+      <div class="dpad">
+        <button id="btnLeft" aria-label="Esquerda">◀</button>
+        <button id="btnRight" aria-label="Direita">▶</button>
+      </div>
+      <div class="actions">
+        <button id="btnShoot" class="btn-star" aria-label="Atirar">⭐</button>
+        <button id="btnJump" class="btn-jump" aria-label="Pular">▲</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
